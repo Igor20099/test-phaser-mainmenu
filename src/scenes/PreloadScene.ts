@@ -5,8 +5,12 @@ class PreloadScene extends Scene {
     super("PreloadScene");
   }
 
+   preload() {
+    this.load.image('bg','./sprites/image.png')
+   }
   create() {
-    this.scene.start("MainScene");
+  
+    this.scene.start("MainMenu");
   }
 }
 
